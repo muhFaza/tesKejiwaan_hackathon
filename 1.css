@@ -1,5 +1,5 @@
 body {
-    /* background-image: url('https://i.imgur.com/acyJQWZ.png'); */
+    background-image: url('https://i.imgur.com/acyJQWZ.png');
     background-size: cover;
     background-position: center;
     position: relative;
@@ -12,7 +12,7 @@ body {
 
 #homepage {
     height: 100%;
-    background-image: url('bg.png');
+    /* background-image: url('bg.png'); */
     background-size: cover;
     background-attachment: fixed;
 }

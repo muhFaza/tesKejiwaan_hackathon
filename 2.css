@@ -1,5 +1,5 @@
 body {
-    background-image: url(./img-asset/acyJQWZ.png);
+    background-image: url(acyJQWZ.png);
     background-size: cover;
 }
 
@@ -10,9 +10,13 @@ p.nama {
     text-align: left;
     color: rgb(235, 217, 217);
     height: 75px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     line-height: 75px;
 
+}
+
+#yourNameAvatar, #yourNameQuiz, #yourNameResult{
+    margin-left: 40px;
 }
 
 p.titles {
@@ -23,8 +27,29 @@ p.titles {
 
 }
 
+@-webkit-keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}
+
+@-webkit-keyframes fadeOut {
+    from { opacity: 1; }
+      to { opacity: 0; }
+}
+@keyframes fadeOut {
+    from { opacity: 1; }
+      to { opacity: 0; }
+}
 .container {
     font-family: 'ADLaM Display', cursive;
+    animation: fadeOut 0.5S;
+}
+.container.active {
+    animation: fadeIn 0.5s;
 }
 
 .container .allcard {
@@ -48,6 +73,7 @@ p.titles {
     border-radius: 5px;
     box-shadow: 0 0 2px #fff, 0 0 3px #fff, 0 0 3px #ca1e0b, 0 0 7px #ca1e0b, 0 0 10px #ca1e0b, 0 0 20px #ca1e0b;
     backdrop-filter: blur(10px);
+    transition: 0.3s ease;
 }
 
 .allcard .card:hover {
