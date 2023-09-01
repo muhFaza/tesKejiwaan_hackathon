@@ -60,6 +60,7 @@ body {
     margin: 8px auto;
     border-radius: 3px;
     background-color: rgba(255, 255, 255, 0.393);
+    height: 23px;
 }
 .inputRedBorder {
     border: 1px solid red !important;
@@ -79,5 +80,44 @@ body {
     display: block;
     margin: 0 auto;
     margin-top: 10px;
-    border-radius: 3px;
+    border-radius: 5px;
+    padding: 5px 19px;
+    box-sizing: border-box;
+    border: 2.5px solid rgba(0, 0, 0, 0.492);
+    background-color: #ff0000;
+    border-radius: 8px;
+    border-style: none;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    height: 32px;
+    line-height: 20px;
+    list-style: none;
+    outline: none;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition: color 100ms;
+    vertical-align: baseline;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    transition: 0.3s;
+    
+}
+
+#tac a {
+    text-decoration: none;
+}
+
+
+
+
+
+#homeBtn:hover,
+#homeBtn:focus {
+    background-color: #f84b4b;
 }
